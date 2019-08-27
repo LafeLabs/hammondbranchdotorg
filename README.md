@@ -1,3 +1,5 @@
+![](symbols/watershed.svg)
+
 # hammondbranch[dot]org
 
 Self-replicating(you replicate it your *self*) web page for Hammond Branch, a little creek that flows through Howard County, Maryland.  
