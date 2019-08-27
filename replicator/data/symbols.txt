@@ -3,6 +3,5 @@
     "longarrow.svg",
     "longthinarrow.svg",
     "shortarrow.svg",
-    "watershed.svg",
     "x.svg"
 ]

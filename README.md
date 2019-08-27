@@ -11,3 +11,5 @@ Hammond Branch originates around the Maple Lawn turkey farm in Laurel, then join
 [Message Board](messageboard/)
 
 [About the Watershed Network](watershed/)
+
+[Make new nodes in the Watershed Network](replicator/)

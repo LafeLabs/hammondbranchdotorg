@@ -1,1 +1,6 @@
-[]
+[
+    "bridges",
+    "messageboard",
+    "replicator",
+    "watershed"
+]
