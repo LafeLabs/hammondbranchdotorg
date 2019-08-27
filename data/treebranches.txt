@@ -1,6 +1,5 @@
 [
     "bridges",
     "messageboard",
-    "replicator",
     "watershed"
 ]

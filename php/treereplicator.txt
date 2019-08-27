@@ -28,6 +28,9 @@ else{
     $baseurl = "";
 }
 
+$treebranches = "https://raw.githubusercontent.com/LafeLabs/hammondbranchdotorg/master/data/treebranches.txt";
+$baseurl = explode("data/",$treebranches)[0];
+
 $thingnameset = false;
 if(isset($_GET["thingname"])){
     $thingname = $_GET["thingname"];
@@ -38,7 +41,7 @@ if(isset($_GET["thingname"])){
 $branchesraw = file_get_contents($treebranches);
 $branches = json_decode($branchesraw);
 $symbolsraw = file_get_contents($baseurl."data/symbols.txt");
-$symbols = json_decode($branchesraw);
+$symbols = json_decode(symbolsraw);
 
 if($thingnameset){
     //first create branch with correct name of "thing"
