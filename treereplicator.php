@@ -41,7 +41,7 @@ if(isset($_GET["thingname"])){
 $branchesraw = file_get_contents($treebranches);
 $branches = json_decode($branchesraw);
 $symbolsraw = file_get_contents($baseurl."data/symbols.txt");
-$symbols = json_decode(symbolsraw);
+$symbols = json_decode($symbolsraw);
 
 if($thingnameset){
     //first create branch with correct name of "thing"
@@ -92,7 +92,7 @@ else{
         copy($baseurl.$value."/symbols/".$value,"symbols/".$value);
     }
 
-    echo("<p><a href = \"index.html/\">index.html</a></p>");
+    echo("<p><a href = \"index.html\">index.html</a></p>");
     echo("<p><a href = \"replicator.php/\">replicator.php</a></p>");
 
     
