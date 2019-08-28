@@ -40,7 +40,7 @@ if(isset($_GET["thingname"])){
 
 $branchesraw = file_get_contents($treebranches);
 $branches = json_decode($branchesraw);
-$symbolsraw = file_get_contents($baseurl."data/symbols.txt");
+$symbolsraw = file_get_contents("https://raw.githubusercontent.com/LafeLabs/hammondbranchdotorg/master/data/symbols.txt");
 $symbols = json_decode($symbolsraw);
 
 if($thingnameset){
@@ -89,7 +89,10 @@ else{
     }
 
     foreach($symbols as $value){
-        copy($baseurl.$value."/symbols/".$value,"symbols/".$value);
+        copy($baseurl."symbols/".$value,"symbols/".$value);
+//        echo("<p>".$baseurl."symbols/".$value."</p>");
+  //      echo("<p>symbols/".$value."</p>");
+        
     }
 
     echo("<p><a href = \"index.html\">index.html</a></p>");
